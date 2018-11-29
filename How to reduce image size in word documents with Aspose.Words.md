@@ -24,7 +24,7 @@ public void Reduce(string file, long value, Guid imageFormat = ImageFormat.Jpeg.
         }
     }
     
-    doc.Save($"{Path.GetFileNameWithoutExtension}_strip.{Path.GetExtension(file)}");
+    doc.Save($"{Path.GetFileNameWithoutExtension(file)}_strip.{Path.GetExtension(file)}");
 }
 ```
 
